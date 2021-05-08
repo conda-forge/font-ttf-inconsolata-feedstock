@@ -5,8 +5,8 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  url: https://github.com/googlefonts/Inconsolata/releases/download/v{{ version }}/fonts_ttf.zip
-  sha256: 626e8ee07501dbb544b50aa59ac2e4b9ec86b810670158a59c7a3cbaf475548a
+  url: https://github.com/googlefonts/Inconsolata/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: f2d8d8ba6caa785a966ef17996822ab14ba91ec423431a29e1b6c4b14bc4cda5
 
 build:
   number: 0
@@ -24,7 +24,7 @@ about:
   home: https://fonts.google.com/specimen/Inconsolata
   summary: Monospace font for pretty code listings
   license: OFL-1.1
-  license_file: ofl/inconsolata/OFL.txt
+  license_file: OFL.txt
   license_family: Other
 
 extra:
